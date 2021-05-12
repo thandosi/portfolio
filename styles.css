@@ -3,74 +3,197 @@
     padding: 0%;
     box-sizing: border-box;
 }
-  
 
-.navbar-links {
+.front{
     display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    background: pink;
-    position: fixed;
-    top: -100%;
-    /*   left: -100%; */
-    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 50px;
     height: 100vh;
+}
+.row{
+    display: flex;
+    background-color: purple;
+}
+.img-me{
+    margin-bottom: 0%;
+    max-width: 100%;
+    padding: 190px 400px;
+    display: flex;
+    height: 100%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.glitch{
+    display: flex;
+    align-items: baseline;
+    font-size: 4opx;
+    line-height: 4opx;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-family: sans-serif;
+    animation: glitch-skew 1s linear infinite alternate-reverse;
+
+}
+
+.line-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 400;
+
+    
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/*second section*/
+#about-me{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    
+
+}
+
+.content{
+    color: white;
+}
+
+.skill-container{
+    color: thistle;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    display: flex;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+h3{
+    font-size:40px ;
+    line-height: 30px;
+    color: white;
+    font-family:sans-serif ;
+    margin: 10px 0 20px;
+    font-weight: 800;
+    display: flex;
+
+}
+h4{
+    color: white;
+    font-family: sans-serif;
+    position: relative;
+    left: 90px
+}
+.line{
+    height: 4px;
+    width: 80px;
+    display: block;
+    background-color: violet;
+}
+.icons{
+    margin: 1%;
+
+}
+.skills{ 
+    padding: 400px;
+    background-color: purple;
+
+}
+
+
+
+.circle{
+    position: relative;
+    width: 360px;
+    height: 360px;
+    background:linear-gradient(#3ea02a);
+
+}
+/* port*/
+.port{
+    height: 890px;
+    background-color: black;
+}
+.side-bar{
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    gap: 20px;
-    font-family: sans-serif;
-    transition: all 0.3s linear;
-  }
-  
-  .navbar-links.active {
-    top: 0;
-    left: 0;
-  }
-  
-  .navbar-button {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    font-size: 30px;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 20px;
-  }
-.body{
-background-color: black;
+    flex-direction: column;
+    background-color: purple;
+    height: 100px;
+    width: 100%;
+    position: relative;
+
+   
 }
-.details{
- color: white;
- background-color:rgb(9, 12, 41);
- width:0%;
- padding: 10%;
- display: flex;
- flex-direction: column;
-
-
-}
-
-.deatils-container{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    box-sizing: border-box;
-    margin: 5%;
-    
-    
-}
-
-.icons{
-    
-}
-
-.list{
-    list-style: none;
+.side-text{
+    font-size: 40px;
+    line-height: 40px;
     color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0 20px;
+    text-align: center;
+    letter-spacing: 8px;
 
 }
 
 
+@keyframes glitch-skew{
+    0%{
+        transform: skew(-3deg);
+    }
+    10%{
+        transform: skew(-4deg);
+    }
+    20%{
+        transform: skew(1deg);
+    }
+    30%{
+        transform: skew(4deg);
+    }
+    40%{
+        transform: skew(-3deg);
+    }
+    50%{
+        transform: skew(-4deg);
+    }
+    60%{
+        transform: skew(1deg);
+    }
+    70%{
+        transform: skew(5deg);
+    }
+    80%{
+        transform: skew(0deg);
+    }
+    90%{
+        transform: skew(5deg);
+    }
+    100%{
+        transform: skew(6deg);
+}
